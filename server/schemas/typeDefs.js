@@ -12,13 +12,13 @@ const typeDefs = gql`
   type Bark {
     id: Int!
     description: String
-    likes: INT
+    likes: Int
   }
 
   input BarkData{
     id: Int!
     description: String
-    likes: INT
+    likes: Int
   }
 
   input UserData {
@@ -29,12 +29,12 @@ const typeDefs = gql`
   }
 
   type postBark{
-    success: boolean
+    success: Boolean
     bark: Bark
   }
 
   type userBark{
-    success: boolean
+    success: Boolean
     user: User
   }
 
@@ -55,7 +55,8 @@ const typeDefs = gql`
     createUser(userName: String!, email: String!, password: String!): Auth
     createBark(bark: BarkData): postBark
     updateUser(userName: String, email: String, password: String): User
-    deleteBark(_id: ID!, quantity: Int!): Comment
+    deleteBark(userId: ID!, barkId: Int!): User
+    deleteUser(userId: ID!): User
     login(email: String!, password: String!): Auth
   }
 `;
