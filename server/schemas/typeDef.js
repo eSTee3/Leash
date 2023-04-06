@@ -1,18 +1,6 @@
 const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
-  type Bark {
-    _id: ID
-    description: String
-    comment: [Comments]
-    likes: INT
-  }
-
-  type Comments {
-    _id: ID
-    description: String
-    likes: INT
-  }
 
   type User {
     _id: ID
@@ -21,20 +9,53 @@ const typeDefs = gql`
     barks: [Bark]
   }
 
-  type Query {
-    categories: [Category]
-    bark(category: ID, name: String): [BARK]
-    product(_id: ID!): Product
+  type Bark {
+    id: Int!
+    description: String
+    likes: INT
+  }
+
+  input BarkData{
+    id: Int!
+    description: String
+    likes: INT
+  }
+
+  input UserData {
+    _id: ID
+    userName: String
+    email: String
+    barks: [BarkData]
+  }
+
+  type postBark{
+    success: boolean
+    bark: Bark
+  }
+
+  type userBark{
+    success: boolean
     user: User
-    order(_id: ID!): Order
-    checkout(products: [ID]!): Checkout
+  }
+
+    type Auth {
+    token: ID
+    user: User
+  }
+
+
+  type Query {
+    bark(id: Int!): Bark
+    barks: [Bark]
+    users: [User]
+    user: User
   }
 
   type Mutation {
-    addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
-    addOrder(products: [ID]!): Order
-    updateUser(firstName: String, lastName: String, email: String, password: String): User
-    updateProduct(_id: ID!, quantity: Int!): Product
+    createUser(userName: String!, email: String!, password: String!): Auth
+    createBark(bark: BarkData): postBark
+    updateUser(userName: String, email: String, password: String): User
+    deleteBark(_id: ID!, quantity: Int!): Comment
     login(email: String!, password: String!): Auth
   }
 `;
