@@ -1,3 +1,6 @@
-const tLeash = require('./tLeash-model');
+const User = require('./User');
+const Bark = require('./Bark');
 
-module.exports = { tLeash };
+
+module.exports = { User, Bark};
+
