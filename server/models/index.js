@@ -1,3 +1,3 @@
-const tBuilding = require('./tBuilding-model');
+const tLeash = require('./tLeash-model');
 
-module.exports = { tBuilding };
+module.exports = { tLeash };
