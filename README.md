@@ -26,11 +26,30 @@ Screenshot of working application:
 ![screenshot of working app]()
 
 ## User Story
-AS A Social media consumer  
-I WANT an application that allows me to post and comment on thoughts I have throughout the day 
-SO THAT I can quickly and easily access my thought history  
-I WANT to be able to edit and delete my thoughts  
-So THAT  when I have changed my idea on what the thought should be it will not be posted forever.  
+```
+GIVEN a social media application
+
+WHEN I visit the site for the first time
+┗►THEN I am presented with all Barks from newest to oldest
+
+WHEN I click on a bark
+┗►THEN I am sent to the login/signup page to log into the site
+
+WHEN I log into the site
+┗►THEN I am sent back to the initial landing page
+
+WHEN I’m logged into the site
+┗►THEN a new option called “Post a Bark” is available
+
+WHEN I click “Post a Bark”
+┗►THEN I’m taken to a page, containing a simple form that allows me to add my Bark to the current list of Barks
+
+WHEN I’m logged in and am at the initial landing page
+┗►THEN I can click on a Bark and see all comments tied to that Bark
+
+WHEN I click on a Bark and see all the comments tied to that Bark
+┗►THEN I can create my own comment to that Bark
+```
 
 ## Installation
 Libraries used:  
