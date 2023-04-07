@@ -1,23 +1,31 @@
-const { AuthenticationError } = require('apollo-server-express');
-const { User, Bark } = require('../models');
-const { signToken } = require('../utils/auth');
-const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+const { AuthenticationError } = require("apollo-server-express");
+const { User, Bark } = require("../models");
+const { signToken } = require("../utils/auth");
+const stripe = require("stripe")("sk_test_4eC39HqLyjWDarjtT1zdp7dc");
 
 const resolvers = {
   Query: {
     user: async (parent, args, context) => {
       if (context.user) {
-        const user = await User.findById(context.user._id).populate({
-          path: 'orders.products',
-          populate: 'category'
-        });
+        const user = await User.findById(context.user._id);
+        //  .populate({
+        //   path: 'orders.products',
+        //   populate: 'category'
+        // });
 
-        user.orders.sort((a, b) => b.purchaseDate - a.purchaseDate);
+        // user.orders.sort((a, b) => b.purchaseDate - a.purchaseDate);
 
         return user;
       }
 
-      throw new AuthenticationError('Not logged in');
+      throw new AuthenticationError("Not logged in");
+    },
+
+    users: async (parent, args, context) => {
+      if (context.user) {
+        const users = await User.find({});
+        return users;
+      }
     },
     bark: async (parent, { id }, context) => {
       if (context.user) {
@@ -26,7 +34,7 @@ const resolvers = {
         return user.orders.id(id);
       }
 
-      throw new AuthenticationError('Not logged in');
+      throw new AuthenticationError("Not logged in");
     },
   },
   Mutation: {
@@ -36,27 +44,30 @@ const resolvers = {
 
       return { token, user };
     },
-    createBark: async (parent, { descripton }, context) => {
-      console.log(context);
+    createBark: async (parent, { description }, context) => {
       if (context.user) {
         const bark = new Bark({ description });
 
-        await User.findByIdAndUpdate(context.user._id, { $push: { barks: bark } });
+        await User.findByIdAndUpdate(context.user._id, {
+          $push: { barks: bark },
+        });
 
         return bark;
       }
 
-      throw new AuthenticationError('Not logged in');
+      throw new AuthenticationError("Not logged in");
     },
     updateUser: async (parent, args, context) => {
       if (context.user) {
-        return await User.findByIdAndUpdate(context.user._id, args, { new: true });
+        return await User.findByIdAndUpdate(context.user._id, args, {
+          new: true,
+        });
       }
 
-      throw new AuthenticationError('Not logged in');
+      throw new AuthenticationError("Not logged in");
     },
-    deleteUser: async (parent, { profileId }) => {
-      return Profile.findOneAndDelete({ _id: profileId });
+    deleteUser: async (parent, { userId }) => {
+      return User.findOneAndDelete({ _id: userId });
     },
     deleteBark: async (parent, { userId, barkId }) => {
       return User.findOneAndUpdate(
@@ -70,20 +81,20 @@ const resolvers = {
       const user = await User.findOne({ email });
 
       if (!user) {
-        throw new AuthenticationError('Incorrect credentials');
+        throw new AuthenticationError("Incorrect credentials");
       }
 
       const correctPw = await user.isCorrectPassword(password);
 
       if (!correctPw) {
-        throw new AuthenticationError('Incorrect credentials');
+        throw new AuthenticationError("Incorrect credentials");
       }
 
       const token = signToken(user);
 
       return { token, user };
-    }
-  }
+    },
+  },
 };
 
 module.exports = resolvers;
