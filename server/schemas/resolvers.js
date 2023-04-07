@@ -44,19 +44,22 @@ const resolvers = {
 
       return { token, user };
     },
-    createBark: async (parent, { description }, context) => {
+
+    createBark: async (parent, { userId, description }, context) => {
       if (context.user) {
-        const bark = new Bark({ description });
-
-        await User.findByIdAndUpdate(context.user._id, {
-          $push: { barks: bark },
-        });
-
-        return bark;
+        return User.findOneAndUpdate(
+          { _id: userId },
+          {
+            $addToSet: { barks: { description: description } },
+          },
+          {
+            new: true,
+          }
+        );
       }
-
-      throw new AuthenticationError("Not logged in");
+      throw new AuthenticationError("You need to be logged in!");
     },
+
     updateUser: async (parent, args, context) => {
       if (context.user) {
         return await User.findByIdAndUpdate(context.user._id, args, {

@@ -6,7 +6,7 @@ const typeDefs = gql`
     userName: String
     email: String
     password: String
-    barks: [Bark]
+    barks: [BarkData]
   }
 
   type Bark {
@@ -15,7 +15,7 @@ const typeDefs = gql`
     likes: Int
   }
 
-  input BarkData {
+  type BarkData {
     _id: ID
     description: String!
     likes: Int
@@ -26,7 +26,7 @@ const typeDefs = gql`
     userName: String!
     email: String!
     password: String!
-    barks: [BarkData]
+    barks: [String]
   }
 
   type postBark {
@@ -53,9 +53,9 @@ const typeDefs = gql`
 
   type Mutation {
     createUser(userName: String!, email: String!, password: String!): Auth
-    createBark(bark: BarkData): postBark
+    createBark(userId: ID!, description: String!): User
     updateUser(userName: String, email: String, password: String): User
-    deleteBark(userId: ID!, bark_id: ID): User
+    deleteBark(userId: ID!, barkId: ID!): User
     deleteUser(userId: ID!): User
     login(email: String!, password: String!): Auth
   }
