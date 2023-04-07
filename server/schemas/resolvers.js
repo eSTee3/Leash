@@ -75,7 +75,7 @@ const resolvers = {
     deleteBark: async (parent, { userId, barkId }) => {
       return User.findOneAndUpdate(
         { _id: userId },
-        { $pull: { barks: barkId } },
+        { $pull: { barks: { _id: barkId } } },
         { new: true }
       );
     },
