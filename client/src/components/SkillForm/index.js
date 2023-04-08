@@ -7,7 +7,7 @@ import { ADD_BARK } from '../../utils/mutations';
 import Auth from '../../utils/auth';
 
 const BarkForm = ({ userId }) => {
-  const [skill, setBark] = useState('');
+  const [bark, setBark] = useState('');
 
   const [addBark, { error }] = useMutation(ADD_BARK);
 
@@ -37,9 +37,9 @@ const BarkForm = ({ userId }) => {
           <div className="col-12 col-lg-9">
             <input
               placeholder="Endorse some skills..."
-              value={skill}
+              value={bark}
               className="form-input w-100"
-              onChange={(event) => setSkill(event.target.value)}
+              onChange={(event) => setBark(event.target.value)}
             />
           </div>
 
@@ -64,4 +64,4 @@ const BarkForm = ({ userId }) => {
   );
 };
 
-export default SkillForm;
+export default BarkForm;
