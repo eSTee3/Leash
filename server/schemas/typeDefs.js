@@ -49,6 +49,7 @@ const typeDefs = gql`
     barks: [Bark]
     users: [User]
     user: User
+    me: User
   }
 
   type Mutation {
