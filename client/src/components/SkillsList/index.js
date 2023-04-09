@@ -1,16 +1,16 @@
 import React from 'react';
 import { useMutation } from '@apollo/client';
 
-import { REMOVE_SKILL } from '../../utils/mutations';
+import {REMOVE_BARK } from '../../utils/mutations';
 import { QUERY_ME } from '../../utils/queries';
 
-const SkillsList = ({ skills, isLoggedInUser = false }) => {
-  const [removeSkill, { error }] = useMutation(REMOVE_SKILL, {
-    update(cache, { data: { removeSkill } }) {
+const BarksList = ({ barks, isLoggedInUser = false }) => {
+  const [removeBark, { error }] = useMutation(REMOVE_BARK, {
+    update(cache, { data: { removeBark } }) {
       try {
         cache.writeQuery({
           query: QUERY_ME,
-          data: { me: removeSkill },
+          data: { me: removeBark },
         });
       } catch (e) {
         console.error(e);
@@ -18,33 +18,33 @@ const SkillsList = ({ skills, isLoggedInUser = false }) => {
     },
   });
 
-  const handleRemoveSkill = async (skill) => {
+  const handleRemoveBark = async (bark) => {
     try {
-      const { data } = await removeSkill({
-        variables: { skill },
+      const { data } = await removeBark({
+        variables: { bark },
       });
     } catch (err) {
       console.error(err);
     }
   };
 
-  if (!skills.length) {
-    return <h3>No Skills Yet</h3>;
+  if (!barks.length) {
+    return <h3>No Barks Yet</h3>;
   }
 
   return (
     <div>
       <div className="flex-row justify-space-between my-4">
-        {skills &&
-          skills.map((skill) => (
-            <div key={skill} className="col-12 col-xl-6">
+        {barks &&
+          barks.map((bark) => (
+            <div key={bark} className="col-12 col-xl-6">
               <div className="card mb-3">
                 <h4 className="card-header bg-dark text-light p-2 m-0 display-flex align-center">
-                  <span>{skill}</span>
+                  <span>{bark}</span>
                   {isLoggedInUser && (
                     <button
                       className="btn btn-sm btn-danger ml-auto"
-                      onClick={() => handleRemoveSkill(skill)}
+                      onClick={() => handleRemoveBark(bark)}
                     >
                       X
                     </button>
@@ -61,4 +61,4 @@ const SkillsList = ({ skills, isLoggedInUser = false }) => {
   );
 };
 
-export default SkillsList;
+export default BarksList;
