@@ -1,8 +1,25 @@
 # Leash
 
+### Table of Contents
+
+- [Technologies Used](#technologies-used)
+  - [Coding Badges](#coding-badges)
+- [Link to Application](#link-to-application)
+- [Description](#description)
+- [Application Screenshots](#application-screenshots)
+- [Local Installation](#installation)
+- [User Story](#user-story)
+  - [Acceptance Criteria](#acceptance-criteria)
+- [Coding Requirements](#coding-requirements)
+  - [Optional Requirements](#optional-requirements)
+- [License](#license)
+- [How to Contribute](#how-to-contribute)
+
+---
+
 ## ![License Badge](https://shields.io/badge/license-MIT-yellow)
 
-## Technologies Used
+# Technologies Used
 
 ![GitHub top language](https://img.shields.io/github/languages/top/eSTee3/react-portfolio?color=green&logo=github&logoColor=green)
 ![GitHub language count](https://img.shields.io/github/languages/count/eSTee3/react-portfolio?color=green&logo=github&logoColor=green)
@@ -14,21 +31,6 @@
 ![alt text](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![alt text](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white)
-
----
-
-### Table of Contents
-
-- [Technologies Used](#technologies-used)
-- [Coding Badges](#coding-badges)
-- [Link to Application](#link-to-application)
-- [Description](#description)
-- [Application Screenshots](#application-screenshots)
-- [Local Installation](#installation)
-- [User Story](#user-story)
-- [Acceptance Criteria](#acceptance-criteria)
-- [License](#license)
-- [How to Contribute](#how-to-contribute)
 
 ---
 
@@ -94,7 +96,7 @@ WHEN I click on a Bark and see all the comments tied to that Bark
 ## Coding Requirements
 
 - [x] Use React for the front end.
-- [ ] Use GraphQL with a Node.js and Express.js server.
+- [x] Use GraphQL with a Node.js and Express.js server.
 - [x] Use MongoDB and the Mongoose ODM for the database.
 - [x] Use queries and mutations for retrieving, adding, updating, and deleting data.
 - [ ] Be deployed using Heroku (with data).
@@ -105,6 +107,12 @@ WHEN I click on a Bark and see all the comments tied to that Bark
 - [x] Protect sensitive API key information on the server.
 - [x] Have a clean repository that meets quality coding standards (file structure, naming conventions, best practices for class and id naming conventions, indentation, high-quality comments, and so on).
 - [x] Have a high-quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
+
+## Optional Requirements
+
+- [ ] Uses a web manifest.
+- [ ] Uses a service worker for offline functionality.
+- [ ] Is installable.
 
 [Back to Top](#table-of-contents)
 
