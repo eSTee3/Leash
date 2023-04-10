@@ -91,6 +91,23 @@ WHEN I click on a Bark and see all the comments tied to that Bark
 
 [Back to Top](#table-of-contents)
 
+## Coding Requirements
+
+- [x] Use React for the front end.
+- [ ] Use GraphQL with a Node.js and Express.js server.
+- [x] Use MongoDB and the Mongoose ODM for the database.
+- [x] Use queries and mutations for retrieving, adding, updating, and deleting data.
+- [ ] Be deployed using Heroku (with data).
+- [x] Have a polished UI.
+- [x] Be responsive.
+- [x] Be interactive (i.e., accept and respond to user input).
+- [x] Include authentication (JWT).
+- [x] Protect sensitive API key information on the server.
+- [x] Have a clean repository that meets quality coding standards (file structure, naming conventions, best practices for class and id naming conventions, indentation, high-quality comments, and so on).
+- [x] Have a high-quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
+
+[Back to Top](#table-of-contents)
+
 ---
 
 # License
