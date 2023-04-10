@@ -1,31 +1,69 @@
 # Leash
-![License Badge](https://shields.io/badge/license-MIT-yellow)  
-Application [Link](https://lumo-grindz.herokuapp.com/)
-## Table of Contents
-1. [Description](#description)
-2. [User Story](#user-story)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Contributing](#contributing)
-6. [Tests](#tests)
-7. [License](#license)
-8. [Questions](#questions)
+
+## ![License Badge](https://shields.io/badge/license-MIT-yellow)
+
+## Technologies Used
+
+![GitHub top language](https://img.shields.io/github/languages/top/eSTee3/react-portfolio?color=green&logo=github&logoColor=green)
+![GitHub language count](https://img.shields.io/github/languages/count/eSTee3/react-portfolio?color=green&logo=github&logoColor=green)
+
+## Coding Badges
+
+![alt text](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![alt text](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![alt text](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white)
+
+---
+
+### Table of Contents
+
+- [Technologies Used](#technologies-used)
+- [Coding Badges](#coding-badges)
+- [Link to Application](#link-to-application)
+- [Description](#description)
+- [Application Screenshots](#application-screenshots)
+- [Local Installation](#installation)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [License](#license)
+- [How to Contribute](#how-to-contribute)
+
+---
+
+## [Link to Live Application](https://)
 
 ## Description
-The web application is designed to compete with other social media applications to create a more inclisve town square for people to comminicate. 
-<br>
-1. Retrieve all Barks: 
+
+This MERN-based web application is designed to compete with other social media applications to create a more inclisve town square for people to comminicate.
+
+1. Retrieve all Barks:
 2. Creata a Bark:
-3. Updating a Bark: 
+3. Updating a Bark:
 4. Delete a Bark:
-  
-Overall, the web application is useful for people who want another social media option then what is currrently provideded. 
-  
-Screenshot of working application:  
-  
+
+Overall, the web application is useful for people who want another social media option then what is currrently provideded.
+
+[Back to Top](#table-of-contents)
+
+## Application Screenshots:
+
 ![screenshot of working app]()
 
+[Back to Top](#table-of-contents)
+
+# Local Installation
+
+1. Download or clone this repo to your local machine
+2. Launch a terminal from the root of the same folder
+3. Enter `npm install` to install all required packages and wait for them to complete
+4. Enter `npm run build` to create and automatically launch the website on your local machine
+
+[Back to Top](#table-of-contents)
+
 ## User Story
+
 ```
 GIVEN a social media application
 
@@ -51,77 +89,46 @@ WHEN I click on a Bark and see all the comments tied to that Bark
 ┗►THEN I can create my own comment to that Bark
 ```
 
-## Installation
-Libraries used:  
--React
--GraphQL
--Node.js
--Express.js
--MongoDB
--Mongoose
--Heroku
-  
-Copy repo code and open Visual studio Code to run. Follow steps below to set up server. 
-  
-### Server setup steps when seeding database with a JavaScript file:
+[Back to Top](#table-of-contents)
 
-1. Set login information in .env file
-<pre>
-DB_NAME='your_mysql_database_name'
-DB_USER='your_mysql_username'
-DB_PASSWORD='your_mysql_password' 
-</pre>
+---
 
-2. Login into mysql
-<pre>
-mysql -u root -p
-</pre>
+# License
 
-3. Source the schema
-<pre>
-source db/schema.sql;
-</pre>
+MIT License
 
-4. Exit out of mysql terminal
-<pre>
-quit
-</pre>
+Copyright (c)
 
-5. Install node packages
-<pre>
-npm i
-</pre>
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-6. Seed the database
-<pre>
-node ./seeds/index.js
-</pre>
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-7. Start Server
-<pre>
-npm start
-</pre>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-## Usage
-Link to application can be found [Here]()
-Login craditionals that can be used:
-<pre>
-Email: admin@test.com
-Password: 123456
-</pre>
-Or can create your own username and signup by providing a username, email, and password.
-## Contributing
-Submit bug and feature requests.
-<br>
-Furture work: 
-1.
+[Back to Top](#table-of-contents)
 
-## Tests
-No tests
-## License
-Please see https://mit-license.org/ to get detailed information for this license
+---
+
+## How to Contribute
+
+[Contributor Covenant](https://www.contributor-covenant.org/)
+
+[Back to Top](#table-of-contents)
 
 ## Questions
+
 You can find [Colton](https://github.com/ColtonWilson) on Github
 <br>
 You can find [Mark]() on Github
