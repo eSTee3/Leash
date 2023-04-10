@@ -49,7 +49,7 @@ Overall, the web application is useful for people who want another social media 
 
 ## Application Screenshots:
 
-![screenshot of working app]()
+![screenshot of working app](./public/Initial%20Site%20Image.png)
 
 [Back to Top](#table-of-contents)
 
