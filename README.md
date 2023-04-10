@@ -156,8 +156,8 @@ SOFTWARE.
 
 You can find [Colton](https://github.com/ColtonWilson) on Github
 <br>
-You can find [Mark]() on Github
+You can find [Mark](https://github.com/eSTee3) on Github
 <br>
-You can find [Mela]() on Github
+You can find [Mela](https://github.com/mela2294) on Github
 <br>
-You can find [Por]() on Github
+You can find [Por](https://github.com/por-chang) on Github
