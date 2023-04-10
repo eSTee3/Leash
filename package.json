@@ -9,6 +9,7 @@
     "install": "cd server && npm i && cd ../client && npm i",
     "heroku-postbuild": "npm run install-client && npm run build",
     "seed": "cd server && npm run seed",
+    "server": "nodemon server.js",
     "build": "cd client && npm run build"
   },
   "engines" : { 
@@ -19,6 +20,10 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "apollo-client": "^2.6.10",
+    "apollo-server-express": "^2.15.0",
+    "graphql": "^15.5.2"
   }
 }
-
