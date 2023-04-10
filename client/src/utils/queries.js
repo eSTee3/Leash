@@ -16,16 +16,11 @@ query Query {
 `;
 
 export const QUERY_SINGLE_USER = gql`
-query Query {
-  user {
+query user($userId: ID!) {
+  user(userId: $userId) {
     _id
     userName
-    email
-    barks {
-      _id
-      description
-      likes
-    }
+    barks
   }
 }
 `;
@@ -34,8 +29,8 @@ export const QUERY_ME = gql`
   query me {
     me {
       _id
-      name
-      skills
+      userName
+      barks
     }
   }
 `;
