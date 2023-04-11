@@ -1,5 +1,5 @@
 {
-  "name": "leash-server",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,8 +9,7 @@
     "seed": "node config/seeds.js"
   },
   "engines" : { 
-    "node" : ">=16.0.0 <17.0.0",
-    "npm": "8.19.2"
+    "node" : ">=16.0.0 <17.0.0"
   },
   "keywords": [],
   "author": "",
