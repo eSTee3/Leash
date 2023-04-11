@@ -48,5 +48,6 @@ mongoose.connect('mongodb://localhost:27017/test', {
   };
 
   seedDB().then(() => {
+    console.log(seedUsers);
     mongoose.connection.close();
   });
