@@ -13,6 +13,8 @@ import Auth from '../utils/auth';
 const User = () => {
   const { userId } = useParams();
 
+  console.log(userId);
+
   // If there is no `userId` in the URL as a parameter, execute the `QUERY_ME` query instead for the logged in user's information
   const { loading, data } = useQuery(
     userId ? QUERY_SINGLE_USER : QUERY_ME,
@@ -21,7 +23,7 @@ const User = () => {
     }
   );
   console.log(userId);
-  
+  console.log(data);
 
   // Check if data is returning from the `QUERY_ME` query, then the `QUERY_SINGLE_PROFILE` query
   const user = data?.me || data?.user || {};

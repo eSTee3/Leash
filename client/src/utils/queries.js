@@ -20,7 +20,11 @@ query user($userId: ID!) {
   user(userId: $userId) {
     _id
     userName
-    barks
+    barks {
+      _id
+      description
+      likes
+    }
   }
 }
 `;
@@ -30,7 +34,11 @@ export const QUERY_ME = gql`
     me {
       _id
       userName
-      barks
+    barks {
+      _id
+      description
+      likes
+    }
     }
   }
 `;
