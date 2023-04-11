@@ -32,8 +32,8 @@ mongoose.connect('mongodb://localhost:27017/test', {
       }]
     },
     {
-      userName: 'TestUser02',
-      email: 'testuser02@gmail.com',
+      userName: 'TestUser03',
+      email: 'testuser03@gmail.com',
       password: '123456',
       bark: [{
         description: "I can't believe it",
