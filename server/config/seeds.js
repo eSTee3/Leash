@@ -1,7 +1,7 @@
 // Used the following link to create this:  https://plainenglish.io/blog/seeding-mongodb-database-from-node-the-simplest-way
 
 const mongoose = require('mongoose');
-const { User, Bark } = require('../models');
+const { User } = require('../models');
 
 mongoose.connect('mongodb://localhost:27017/test', {
   useNewUrlParser: true, useUnifiedTopology: true })
@@ -32,7 +32,7 @@ mongoose.connect('mongodb://localhost:27017/test', {
       }]
     },
     {
-      userName: 'TestUser03',
+      userName: 'TestUser02',
       email: 'testuser03@gmail.com',
       password: '123456',
       bark: [{
