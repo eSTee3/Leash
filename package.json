@@ -12,14 +12,15 @@
     "server": "nodemon server.js",
     "build": "cd client && npm run build"
   },
-  "engines" : { 
-    "node" : ">=16.0.0 <17.0.0"
+  "engines": {
+    "node": ">=16.0.0 <17.0.0"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "concurrently": "^5.1.0",
+    "webpack": "^4.42.0"
   },
   "dependencies": {
     "apollo-client": "^2.6.10",
