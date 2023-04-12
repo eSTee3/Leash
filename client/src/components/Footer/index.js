@@ -1,11 +1,12 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { styles } from '../styles/FooterStyles';
 
 const Footer = () => {
   const location = useLocation();
   const navigate = useNavigate();
   return (
-    <footer className="w-100 mt-auto text-dark p-4">
+    <footer className="w-100 mt-auto text-dark p-4" style={styles.background}>
       <div className="container text-center mb-5">
         {location.pathname !== '/' && (
           <button

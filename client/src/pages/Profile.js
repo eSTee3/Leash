@@ -13,7 +13,7 @@ import Auth from '../utils/auth';
 const User = () => {
   const { userId } = useParams();
 
-  console.log(userId);
+
 
   // If there is no `userId` in the URL as a parameter, execute the `QUERY_ME` query instead for the logged in user's information
   const { loading, data } = useQuery(
@@ -22,12 +22,9 @@ const User = () => {
       variables: { userId: userId },
     }
   );
-  console.log(userId);
-  console.log(data);
 
   // Check if data is returning from the `QUERY_ME` query, then the `QUERY_SINGLE_PROFILE` query
   const user = data?.me || data?.user || {};
-console.log(user);
   // Use React Router's `<Navigate />` component to redirect to personal profile page if username is yours
   if (Auth.loggedIn() && Auth.getUser().data._id === userId) {
     return <Navigate to="/me" />;
