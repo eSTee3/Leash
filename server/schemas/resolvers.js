@@ -43,14 +43,17 @@ const resolvers = {
 
       return { token, user };
     },
-    createBark: async (parent, { descripton }, context) => {
-      console.log(context);
+    createBark: async (parent, { userId, description }, context) => {
       if (context.user) {
-        const bark = new Bark({ description });
-
-        await User.findByIdAndUpdate(context.user._id, { $push: { barks: bark } });
-
-        return bark;
+          return User.findOneAndUpdate(
+            {_id: userId},
+            {
+              $addToSet: {barks: description},
+            },
+            {
+              new: true,
+            }
+          );
       }
 
       throw new AuthenticationError('Not logged in');

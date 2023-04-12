@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import { styles } from '../styles/HeaderStyles';
 import Auth from '../../utils/auth';
+import logo from '../../assets/images/logo.png';
 
 const Header = () => {
   const logout = (event) => {
@@ -9,15 +10,16 @@ const Header = () => {
     Auth.logout();
   };
   return (
-    <header className="bg-info text-dark mb-4 py-3 display-flex align-center">
+    <header className="mb-4 py-3 display-flex align-center" style={styles.header}>
       <div className="container flex-column justify-space-between-lg justify-center align-center text-center">
+        <img src={logo} alt="Logo" style={styles.image}></img>
         <Link className="text-dark" to="/">
-          <h1 className="m-0" style={{ fontSize: '3rem' }}>
-            Tech Friends
+          <h1 className="m-0" style={styles.textSize}>
+            Welcome to Leash
           </h1>
         </Link>
         <p className="m-0" style={{ fontSize: '1.75rem', fontWeight: '700' }}>
-          Meet your new programming pals.
+          A new way to communicate
         </p>
         <div>
           {Auth.loggedIn() ? (

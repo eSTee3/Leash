@@ -9,25 +9,27 @@ import Auth from '../../utils/auth';
 const BarkForm = ({ userId }) => {
   const [bark, setBark] = useState('');
 
-  const [addBark, { error }] = useMutation(ADD_BARK);
+  const [createBark, { error }] = useMutation(ADD_BARK);
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-
+    console.log(userId);
+    console.log(bark);
     try {
-      const data = await addBark({
+      const data = await createBark({
         variables: { userId, bark },
       });
-
+      console.log(data);
       setBark('');
     } catch (err) {
       console.error(err);
+      console.log("There was an error");
     }
   };
 
   return (
     <div>
-      <h4>Endorse some more skills below.</h4>
+      <h4>Create a Bark</h4>
 
       {Auth.loggedIn() ? (
         <form
@@ -36,7 +38,7 @@ const BarkForm = ({ userId }) => {
         >
           <div className="col-12 col-lg-9">
             <input
-              placeholder="Endorse some skills..."
+              placeholder="Bark Bark Bark..."
               value={bark}
               className="form-input w-100"
               onChange={(event) => setBark(event.target.value)}
@@ -45,7 +47,7 @@ const BarkForm = ({ userId }) => {
 
           <div className="col-12 col-lg-3">
             <button className="btn btn-info btn-block py-3" type="submit">
-              Endorse Skill
+              Add Bark
             </button>
           </div>
           {error && (
@@ -56,7 +58,7 @@ const BarkForm = ({ userId }) => {
         </form>
       ) : (
         <p>
-          You need to be logged in to endorse skills. Please{' '}
+          You need to be logged in to create a Bark. Please{' '}
           <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
         </p>
       )}
