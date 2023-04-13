@@ -29,7 +29,6 @@ const resolvers = {
     bark: async (parent, { id }, context) => {
       if (context.user) {
         const user = await Bark.findById(context.user._id);
-        const user = await Bark.findById(context.user._id);
 
         return user.barks.id(id);
       }
