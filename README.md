@@ -1,7 +1,10 @@
 # Leash
+
 ![License Badge](https://shields.io/badge/license-MIT-yellow)  
 Application [Link](https://lumo-grindz.herokuapp.com/)
+
 ## Table of Contents
+
 1. [Description](#description)
 2. [User Story](#user-story)
 3. [Installation](#installation)
@@ -12,20 +15,23 @@ Application [Link](https://lumo-grindz.herokuapp.com/)
 8. [Questions](#questions)
 
 ## Description
-The web application is designed to compete with other social media applications to create a more inclisve town square for people to comminicate. 
+
+The web application is designed to compete with other social media applications to create a more inclisve town square for people to comminicate.
 <br>
-1. Retrieve all Barks: 
+
+1. Retrieve all Barks:
 2. Creata a Bark:
-3. Updating a Bark: 
+3. Updating a Bark:
 4. Delete a Bark:
-  
-Overall, the web application is useful for people who want another social media option then what is currrently provideded. 
-  
-Screenshot of working application:  
-  
+
+Overall, the web application is useful for people who want another social media option then what is currrently provideded.
+
+Screenshot of working application:
+
 ![screenshot of working app]()
 
 ## User Story
+
 ```
 GIVEN a social media application
 
@@ -52,6 +58,7 @@ WHEN I click on a Bark and see all the comments tied to that Bark
 ```
 
 ## Installation
+
 Libraries used:  
 -React
 -GraphQL
@@ -60,9 +67,9 @@ Libraries used:
 -MongoDB
 -Mongoose
 -Heroku
-  
-Copy repo code and open Visual studio Code to run. Follow steps below to set up server. 
-  
+
+Copy repo code and open Visual studio Code to run. Follow steps below to set up server.
+
 ### Server setup steps when seeding database with a JavaScript file:
 
 1. Set login information in .env file
@@ -103,29 +110,39 @@ npm start
 </pre>
 
 ## Usage
+
 Link to application can be found [Here]()
 Login craditionals that can be used:
+
 <pre>
 Email: admin@test.com
 Password: 123456
 </pre>
+
 Or can create your own username and signup by providing a username, email, and password.
+
 ## Contributing
+
 Submit bug and feature requests.
 <br>
-Furture work: 
-1.
+Furture work:
+
+1. React and comment to the barks.
 
 ## Tests
+
 No tests
+
 ## License
+
 Please see https://mit-license.org/ to get detailed information for this license
 
 ## Questions
+
 You can find [Colton](https://github.com/ColtonWilson) on Github
 <br>
-You can find [Mark]() on Github
+You can find [Mark](https://github.com/eSTee3) on Github
 <br>
-You can find [Mela]() on Github
+You can find [Mela](https://github.com/mela2294) on Github
 <br>
-You can find [Por]() on Github
+You can find [Por](https://github.com/por-chang) on Github
