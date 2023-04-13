@@ -16,7 +16,9 @@ const resolvers = {
     },
     users: async (parent, args, context) => {
       if (context.user) {
-        const users = await User.find({});
+        const users = await User.find({}).populate(
+          "barks"
+        );
         return users;
       }
     },
@@ -35,6 +37,12 @@ const resolvers = {
 
       throw new AuthenticationError("Not logged in");
     },
+    barks: async (parent, args, context) => {
+      if (context.user) {
+        const barks = await Bark.find({});
+        return barks;
+      }
+    },
   },
   Mutation: {
     createUser: async (parent, args) => {
@@ -47,7 +55,6 @@ const resolvers = {
       if (context.user) {
         const bark = await Bark.create({
           ...args,
-          userName: context.user.userName,
         });
         await User.findOneAndUpdate(
           { _id: context.user._id },

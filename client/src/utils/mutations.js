@@ -14,15 +14,12 @@ export const ADD_USER = gql`
 
 //Need to adjust these when get bark to work //TODO
 export const ADD_BARK = gql`
-  mutation createBark($userId: ID!, $description: String!) {
-    createBark(userId: $userId, description: $description) {
-      _id
-      userName
-      barks {
-        _id
-        description
-        likes
-      }
+  mutation createBark($description: String!) {
+    createBark(description: $description) {
+          _id
+          description
+          likes
+          date
     }
   }
 `;

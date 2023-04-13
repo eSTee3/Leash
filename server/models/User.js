@@ -21,7 +21,7 @@ const userSchema = new Schema({
     required: true,
     minlength: 5
   },
-  barks: [Bark.schema]
+  barks: [{type: Schema.Types.ObjectId, ref: "Bark"}]
 });
 
 // set up pre-save middleware to create password
