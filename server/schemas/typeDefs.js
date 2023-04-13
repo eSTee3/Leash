@@ -11,7 +11,7 @@ const typeDefs = gql`
 
   type Bark {
     _id: ID
-    description: String!
+    description: String
     likes: Int
     date: String
   }

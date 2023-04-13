@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
 const bcrypt = require('bcrypt');
-const Bark = require('./Bark');
 
 const userSchema = new Schema({
   userName: {
