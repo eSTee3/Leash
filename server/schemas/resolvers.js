@@ -28,11 +28,11 @@ const resolvers = {
       }
       throw new AuthenticationError("You need to be logged in!");
     },
-    bark: async (parent, { id }, context) => {
+    bark: async (parent, { _id }, context) => {
       if (context.user) {
-        const user = await Bark.findById(context.user._id);
+        const user = await Bark.findById(_id);
 
-        return user.barks.id(id);
+        return user;
       }
 
       throw new AuthenticationError("Not logged in");
@@ -82,10 +82,10 @@ const resolvers = {
     deleteUser: async (parent, args, context) => {
       return User.findOneAndDelete({_id: context.user._id} );
     },
-    deleteBark: async (parent, { userId, barkId }) => {
+    deleteBark: async (parent, { id }, context) => {
       return User.findOneAndUpdate(
-        { _id: userId },
-        { $pull: { barks: barkId } },
+        { _id: context.user._id},
+        { $pull: { barks: id } },
         { new: true }
       );
     },

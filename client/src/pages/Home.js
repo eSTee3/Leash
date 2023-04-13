@@ -18,7 +18,7 @@ const Home = () => {
           ) : (
             <UserList
               users={users}
-              title="Here's the current roster of friends..."
+              title="What the dog pound is saying..."
             />
           )}
         </div>

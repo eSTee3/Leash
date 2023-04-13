@@ -19,16 +19,20 @@ const UserList = ({ users, title }) => {
                   {user.userName} <br />
                   <span className="text-white" style={{ fontSize: '1rem' }}>
                     currently has {user.barks ? user.barks.length : 0}{' '}
-                    endorsed skill
+                    bark
                     {user.barks && user.barks.length === 1 ? '' : 's'}
                   </span>
                 </h4>
+
 
                 <Link
                   className="btn btn-block btn-squared btn-light text-dark"
                   to={`/users/${user._id}`}
                 >
-                  View and endorse their skills.
+                  View Barks.
+                  <span>
+                    {user.barks.description}
+                  </span>
                 </Link>
               </div>
             </div>

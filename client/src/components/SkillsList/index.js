@@ -18,10 +18,10 @@ const BarksList = ({ barks, isLoggedInUser = false }) => {
     },
   });
 
-  const handleRemoveBark = async (bark) => {
+  const handleRemoveBark = async (id) => {
     try {
       const { data } = await removeBark({
-        variables: { bark },
+        variables: { id },
       });
     } catch (err) {
       console.error(err);
@@ -31,20 +31,21 @@ const BarksList = ({ barks, isLoggedInUser = false }) => {
   if (!barks.length) {
     return <h3>No Barks Yet</h3>;
   }
-
+  
+  console.log(barks[0]);
   return (
     <div>
       <div className="flex-row justify-space-between my-4">
         {barks &&
           barks.map((bark) => (
-            <div key={bark} className="col-12 col-xl-6">
+            <div key={bark._id} className="col-12 col-xl-6">
               <div className="card mb-3">
                 <h4 className="card-header bg-dark text-light p-2 m-0 display-flex align-center">
-                  <span>{bark}</span>
+                  <span>{bark.description}</span>
                   {isLoggedInUser && (
                     <button
                       className="btn btn-sm btn-danger ml-auto"
-                      onClick={() => handleRemoveBark(bark)}
+                      onClick={() => handleRemoveBark(bark._id)}
                     >
                       X
                     </button>
