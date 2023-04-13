@@ -17,7 +17,7 @@ const BarkForm = ({ userId }) => {
     console.log(bark);
     try {
       const data = await createBark({
-        variables: { userId, bark },
+        variables: { userId, description: bark },
       });
       console.log(data);
       setBark('');

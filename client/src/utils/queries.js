@@ -10,6 +10,7 @@ query Query {
       _id
       description
       likes
+      date
     }
   }
 }
