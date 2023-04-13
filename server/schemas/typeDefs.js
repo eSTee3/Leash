@@ -6,37 +6,14 @@ const typeDefs = gql`
     userName: String
     email: String
     password: String
-    barks: [BarkData]
+    barks: [Bark]
   }
 
   type Bark {
     _id: ID
     description: String!
     likes: Int
-  }
-
-  type BarkData {
-    _id: ID
-    description: String!
-    likes: Int
-  }
-
-  input UserData {
-    _id: ID
-    userName: String!
-    email: String!
-    password: String!
-    barks: [String]
-  }
-
-  type postBark {
-    success: Boolean
-    bark: Bark
-  }
-
-  type userBark {
-    success: Boolean
-    user: User
+    date: String
   }
 
   type Auth {
@@ -45,10 +22,10 @@ const typeDefs = gql`
   }
 
   type Query {
-    bark(_id: ID): Bark
+    bark(_id: ID!): Bark
     barks: [Bark]
     users: [User]
-    user: User
+    user(_id: ID!): User
     me: User
   }
 
@@ -57,7 +34,7 @@ const typeDefs = gql`
     createBark(userId: ID!, description: String!): User
     updateUser(userName: String, email: String, password: String): User
     deleteBark(userId: ID!, barkId: ID!): User
-    deleteUser(userId: ID!): User
+    deleteUser: User
     login(email: String!, password: String!): Auth
   }
 `;
