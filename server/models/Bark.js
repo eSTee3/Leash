@@ -10,6 +10,10 @@ const barkSchema = new Schema({
     type: Number,
     default: 0,
   },
+  date: {
+    type: Date,
+    default: Date.now
+  },
 });
 
 const Bark = mongoose.model("Bark", barkSchema);
