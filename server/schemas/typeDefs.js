@@ -33,7 +33,7 @@ const typeDefs = gql`
     createUser(userName: String!, email: String!, password: String!): Auth
     createBark(description: String!): Bark
     updateUser(userName: String, email: String, password: String): User
-    deleteBark(userId: ID!, barkId: ID!): User
+    deleteBark( id: String!): User
     deleteUser: User
     login(email: String!, password: String!): Auth
   }

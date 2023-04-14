@@ -7,7 +7,7 @@ const resolvers = {
   Query: {
     user: async (parent, { _id }, context) => {
       if (context.user) {
-        const user = await User.findById(_id);
+        const user = await User.findById(_id).populate('barks' );
 
         return user;
       }
@@ -24,15 +24,15 @@ const resolvers = {
     },
     me: async (parent, args, context) => {
       if (context.user) {
-        return User.findOne({ _id: context.user._id });
+        return User.findOne({ _id: context.user._id }).populate('barks');
       }
       throw new AuthenticationError("You need to be logged in!");
     },
     bark: async (parent, { _id }, context) => {
       if (context.user) {
-        const user = await Bark.findById(_id);
+        const bark = await Bark.findById(_id);
 
-        return user;
+        return bark;
       }
 
       throw new AuthenticationError("Not logged in");
@@ -83,11 +83,21 @@ const resolvers = {
       return User.findOneAndDelete({_id: context.user._id} );
     },
     deleteBark: async (parent, { id }, context) => {
-      return User.findOneAndUpdate(
+      if(context.user){
+      const removeBark = await User.findOneAndUpdate(
         { _id: context.user._id},
-        { $pull: { barks: id } },
+        { $pull: { 
+          barks: {
+            id,
+          },
+         },
+        },
         { new: true }
+
       );
+      return removeBark;
+    }
+     throw new AuthenticationError("Not logged in");
     },
 
     login: async (parent, { email, password }) => {

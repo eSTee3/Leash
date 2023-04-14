@@ -70,8 +70,8 @@ export const UPDATE_USER = gql`
 `;
 
 export const REMOVE_BARK = gql`
-  mutation deleteBark($userId: ID!, $barkId: ID!) {
-    deleteBark(userId: $userId, barkId: $barkId) {
+  mutation deleteBark($barkId: String!) {
+    deleteBark(barkId: $barkId) {
       _id
       userName
       email
@@ -80,6 +80,7 @@ export const REMOVE_BARK = gql`
         description
         _id
         likes
+        date
       }
     }
   }
