@@ -1,8 +1,9 @@
 import React from 'react';
 import { useMutation, useQuery } from '@apollo/client';
 
-import {REMOVE_BARK } from '../../utils/mutations';
-import { QUERY_ME } from '../../utils/queries';
+
+import { REMOVE_BARK } from "../../utils/mutations";
+import { QUERY_ME } from "../../utils/queries";
 
 
 const BarksList = ({ barks, isLoggedInUser = false }) => {
@@ -22,8 +23,10 @@ const BarksList = ({ barks, isLoggedInUser = false }) => {
 
   const handleRemoveBark = async (id) => {
     try {
+
       const { data } = await removeBark({
         variables: { id: id },
+
       });
     } catch (err) {
       console.error(err);
@@ -33,7 +36,6 @@ const BarksList = ({ barks, isLoggedInUser = false }) => {
   if (!barks.length) {
     return <h3>No Barks Yet</h3>;
   }
-
 
   console.log(barks[0]);
   return (

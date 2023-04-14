@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { styles } from '../styles/BarksStyles';
+import React from "react";
+import { Link } from "react-router-dom";
+// import { styles } from '../styles/BarksStyles';
 
 const UserList = ({ users, title }) => {
   if (!users.length) {
@@ -17,22 +17,18 @@ const UserList = ({ users, title }) => {
               <div className="card mb-3">
                 <h4 className="card-header bg-dark text-light p-2 m-0">
                   {user.userName} <br />
-                  <span className="text-white" style={{ fontSize: '1rem' }}>
-                    currently has {user.barks ? user.barks.length : 0}{' '}
-                    bark
-                    {user.barks && user.barks.length === 1 ? '' : 's'}
+                  <span className="text-white" style={{ fontSize: "1rem" }}>
+                    currently has {user.barks ? user.barks.length : 0} bark
+                    {user.barks && user.barks.length === 1 ? "" : "s"}
                   </span>
                 </h4>
-
 
                 <Link
                   className="btn btn-block btn-squared btn-light text-dark"
                   to={`/users/${user._id}`}
                 >
                   View Barks.
-                  <span>
-                    {user.barks.description}
-                  </span>
+                  <span>{user.barks.description}</span>
                 </Link>
               </div>
             </div>

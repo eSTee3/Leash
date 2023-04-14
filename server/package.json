@@ -20,6 +20,9 @@
     "mongoose": "^6.1.8",
     "stripe": "^8.67.0"
   },
+  "engines" : { 
+    "node" : ">=16.0.0 <17.0.0"
+  },
   "devDependencies": {
     "nodemon": "^2.0.2"
   }
