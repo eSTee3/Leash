@@ -46,11 +46,12 @@ export const QUERY_ME = gql`
 
 
 export const QUERY_BARKS = gql`
-query Query {
+query barks {
   barks {
     _id
     description
     likes
+    date
   }
 }
 `;
@@ -61,6 +62,7 @@ query Query($id: ID) {
     _id
     description
     likes
+    date
   }
 }
 `;

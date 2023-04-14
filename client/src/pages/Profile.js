@@ -47,8 +47,7 @@ const User = () => {
   return (
     <div>
       <h2 className="card-header">
-        {userId ? `${user.userName}'s` : 'Your'} friends have endorsed these
-        skills...
+        {userId ? `${user.userName}'s` : 'Your'} barks attract attention
       </h2>
 
       {user.barks?.length > 0 && (
