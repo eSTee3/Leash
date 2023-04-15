@@ -1,7 +1,11 @@
 # Leash
 
 ![License Badge](https://shields.io/badge/license-MIT-yellow)  
-Application [Link](https://lumo-grindz.herokuapp.com/)
+Application [Link](https://team01-leash.herokuapp.com/)  
+Email and Password provided below for testing purpose  
+### Testing Loggin  
+Email: admin@test.com  
+Password: 123456
 
 ## Table of Contents
 
@@ -28,7 +32,7 @@ Overall, the web application is useful for people who want another social media 
 
 Screenshot of working application:
 
-![screenshot of working app]()
+![screenshot of working app](https://github.com/eSTee3/Leash/blob/main/public/project3_working.png)
 
 ## User Story
 
