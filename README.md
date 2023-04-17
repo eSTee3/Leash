@@ -6,10 +6,10 @@
   - [Coding Badges](#coding-badges)
 - [Link to Application](#link-to-application)
 - [Description](#description)
-- [Application Screenshots](#application-screenshots)
-- [Local Installation](#installation)
-- [User Story](#user-story)
-  - [Acceptance Criteria](#acceptance-criteria)
+- [Application Screenshots](#application-screenshots:)
+- [Local Installation](#local-installation)
+- [User Story](#user-story:)
+  - [Acceptance Criteria](#acceptance-criteria:)
 - [Coding Requirements](#coding-requirements)
   - [Optional Requirements](#optional-requirements)
 - [License](#license)
@@ -54,9 +54,6 @@ Overall, the web application is useful for people who want another social media 
 ![Screenshot 2023-04-16 183217](https://user-images.githubusercontent.com/115947835/232357587-84f28922-7172-450c-8c60-7f076ecb3caa.png)
 ![screenshot of working app](https://github.com/eSTee3/Leash/blob/main/public/project3_working.png)
 ![Screenshot 2023-04-16 182900](https://user-images.githubusercontent.com/115947835/232357320-f2c726d9-5138-4051-b31b-a740d38fb3d5.png)
-
-## User Story
-[Back to Top](#table-of-contents)
 
 # Local Installation
 
