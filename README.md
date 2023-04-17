@@ -24,6 +24,8 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/eSTee3/react-portfolio?color=green&logo=github&logoColor=green)
 ![GitHub language count](https://img.shields.io/github/languages/count/eSTee3/react-portfolio?color=green&logo=github&logoColor=green)
 
+[Back to Top](#table-of-contents)
+
 ## Coding Badges
 
 ![alt text](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
@@ -32,9 +34,12 @@
 ![alt text](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white)
 
+[Back to Top](#table-of-contents)
 ---
 
 ## [Link to Live Application](https://team01-leash.herokuapp.com/)
+
+[Back to Top](#table-of-contents)
 
 ## Description
 
@@ -52,8 +57,16 @@ Overall, the web application is useful for people who want another social media 
 ## Application Screenshots:
 
 ![Screenshot 2023-04-16 183217](https://user-images.githubusercontent.com/115947835/232357587-84f28922-7172-450c-8c60-7f076ecb3caa.png)
+
+[Back to Top](#table-of-contents)
+
 ![screenshot of working app](https://github.com/eSTee3/Leash/blob/main/public/project3_working.png)
+
+[Back to Top](#table-of-contents)
+
 ![Screenshot 2023-04-16 182900](https://user-images.githubusercontent.com/115947835/232357320-f2c726d9-5138-4051-b31b-a740d38fb3d5.png)
+
+[Back to Top](#table-of-contents)
 
 # Local Installation
 
@@ -71,6 +84,8 @@ Overall, the web application is useful for people who want another social media 
 [I WANT]() an application that allows me to post and comment on thoughts I have throughout the day
 
 [SO THAT]() I can quickly and easily access my thought history
+
+[Back to Top](#table-of-contents)
 
 ## Acceptance Criteria:
 ```
@@ -114,6 +129,8 @@ WHEN I click on a Bark and see all the comments tied to that Bark
 - [x] Protect sensitive API key information on the server.
 - [x] Have a clean repository that meets quality coding standards (file structure, naming conventions, best practices for class and id naming conventions, indentation, high-quality comments, and so on).
 - [x] Have a high-quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
+
+[Back to Top](#table-of-contents)
 
 ## Optional Requirements
 
@@ -161,12 +178,12 @@ SOFTWARE.
 
 ## Questions?
 
-Contact us:
+Contact [Colton](https://github.com/ColtonWilson) via Github
+<br>
+Contact [Mark](https://github.com/eSTee3) via Github
+<br>
+Contact [Mela](https://github.com/mela2294) via Github
+<br>
+Contact [Por](https://github.com/por-chang) via Github
 
-[Colton](https://github.com/ColtonWilson) on Github
-<br>
-[Mark](https://github.com/eSTee3) on Github
-<br>
-[Mela](https://github.com/mela2294) on Github
-<br>
-[Por](https://github.com/por-chang) on Github
+[Back to Top](#table-of-contents)
