@@ -38,7 +38,7 @@
 
 ---
 
-## [Link to Live Application](https://team01-leash.herokuapp.com/)
+# [Link to Live Application](https://team01-leash.herokuapp.com/)
 
 [Back to Top](#table-of-contents)
 
