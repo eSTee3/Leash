@@ -21,8 +21,8 @@
 
 # Technologies Used
 
-![GitHub top language](https://img.shields.io/github/languages/top/eSTee3/react-portfolio?color=green&logo=github&logoColor=green)
-![GitHub language count](https://img.shields.io/github/languages/count/eSTee3/react-portfolio?color=green&logo=github&logoColor=green)
+![GitHub top language](https://img.shields.io/github/languages/top/eSTee3/leash?color=green&logo=github&logoColor=green)
+![GitHub language count](https://img.shields.io/github/languages/count/eSTee3/leash?color=green&logo=github&logoColor=green)
 
 [Back to Top](#table-of-contents)
 
