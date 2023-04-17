@@ -40,10 +40,10 @@
 
 This MERN-based web application is designed to compete with other social media applications to create a more inclisve town square for people to comminicate.
 
-1. Retrieve all Barks:
-2. Creata a Bark:
-3. Updating a Bark:
-4. Delete a Bark:
+1. Retrieve all Barks
+2. Creata a Bark
+3. Updating a Bark
+4. Delete a Bark
 
 Overall, the web application is useful for people who want another social media option then what is currrently provideded.
 
@@ -63,12 +63,19 @@ Overall, the web application is useful for people who want another social media 
 1. Download or clone this repo to your local machine
 2. Launch a terminal from the root of the same folder
 3. Enter `npm install` to install all required packages and wait for them to complete
-4. Enter `npm run build` to create and automatically launch the website on your local machine
+4. Enter `npm run develop` to create and automatically launch the website on your local machine
 
 [Back to Top](#table-of-contents)
 
-## User Story
+## User Story:
 
+[AS A]() Social media consumer
+
+[I WANT]() an application that allows me to post and comment on thoughts I have throughout the day
+
+[SO THAT]() I can quickly and easily access my thought history
+
+## Acceptance Criteria:
 ```
 GIVEN a social media application
 
@@ -115,7 +122,7 @@ WHEN I click on a Bark and see all the comments tied to that Bark
 
 - [ ] Uses a web manifest.
 - [ ] Uses a service worker for offline functionality.
-- [ ] Is installable.
+- [x] Is installable.
 
 [Back to Top](#table-of-contents)
 
@@ -155,13 +162,14 @@ SOFTWARE.
 
 [Back to Top](#table-of-contents)
 
-## Questions
+## Questions?
 
-You can find [Colton](https://github.com/ColtonWilson) on Github
-<br>
-You can find [Mark](https://github.com/eSTee3) on Github
-<br>
-You can find [Mela](https://github.com/mela2294) on Github
-<br>
-You can find [Por](https://github.com/por-chang) on Github
+Contact us:
 
+[Colton](https://github.com/ColtonWilson) on Github
+<br>
+[Mark](https://github.com/eSTee3) on Github
+<br>
+[Mela](https://github.com/mela2294) on Github
+<br>
+[Por](https://github.com/por-chang) on Github
