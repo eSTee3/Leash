@@ -4,7 +4,7 @@
 
 - [Technologies Used](#technologies-used)
   - [Coding Badges](#coding-badges)
-- [Link to Application](#link-to-application)
+- [Link to Application](#link-to-live-application)
 - [Description](#description)
 - [Application Screenshots](#application-screenshots)
 - [Local Installation](#local-installation)
