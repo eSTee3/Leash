@@ -19,14 +19,14 @@
 
 # ![License Badge](https://shields.io/badge/license-MIT-yellow)
 
-# Code Base Info
+### Code Base Info
 
 ![GitHub top language](https://img.shields.io/github/languages/top/eSTee3/leash?color=green&logo=github&logoColor=green)
 ![GitHub language count](https://img.shields.io/github/languages/count/eSTee3/leash?color=green&logo=github&logoColor=green)
 
 [Back to Top](#table-of-contents)
 
-## Coding Badges
+### Coding Badges
 
 ![alt text](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
