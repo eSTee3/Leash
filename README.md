@@ -35,6 +35,7 @@
 ![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white)
 
 [Back to Top](#table-of-contents)
+
 ---
 
 ## [Link to Live Application](https://team01-leash.herokuapp.com/)
