@@ -1,27 +1,44 @@
 # Leash
 
-![License Badge](https://shields.io/badge/license-MIT-yellow)  
-Application [Link](https://team01-leash.herokuapp.com/)  
-Email and Password provided below for testing purpose  
-### Testing Loggin  
-Email: admin@test.com  
-Password: 123456
+### Table of Contents
 
-## Table of Contents
+- [Technologies Used](#technologies-used)
+  - [Coding Badges](#coding-badges)
+- [Link to Application](#link-to-application)
+- [Description](#description)
+- [Application Screenshots](#application-screenshots)
+- [Local Installation](#installation)
+- [User Story](#user-story)
+  - [Acceptance Criteria](#acceptance-criteria)
+- [Coding Requirements](#coding-requirements)
+  - [Optional Requirements](#optional-requirements)
+- [License](#license)
+- [How to Contribute](#how-to-contribute)
 
-1. [Description](#description)
-2. [User Story](#user-story)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Contributing](#contributing)
-6. [Tests](#tests)
-7. [License](#license)
-8. [Questions](#questions)
+---
+
+## ![License Badge](https://shields.io/badge/license-MIT-yellow)
+
+# Technologies Used
+
+![GitHub top language](https://img.shields.io/github/languages/top/eSTee3/react-portfolio?color=green&logo=github&logoColor=green)
+![GitHub language count](https://img.shields.io/github/languages/count/eSTee3/react-portfolio?color=green&logo=github&logoColor=green)
+
+## Coding Badges
+
+![alt text](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![alt text](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![alt text](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white)
+
+---
+
+## [Link to Live Application](https://)
 
 ## Description
 
-The web application is designed to compete with other social media applications to create a more inclisve town square for people to comminicate.
-<br>
+This MERN-based web application is designed to compete with other social media applications to create a more inclisve town square for people to comminicate.
 
 1. Retrieve all Barks:
 2. Creata a Bark:
@@ -30,11 +47,25 @@ The web application is designed to compete with other social media applications 
 
 Overall, the web application is useful for people who want another social media option then what is currrently provideded.
 
-Screenshot of working application:
+[Back to Top](#table-of-contents)
+
+## Application Screenshots:
 
 ![Screenshot 2023-04-16 183217](https://user-images.githubusercontent.com/115947835/232357587-84f28922-7172-450c-8c60-7f076ecb3caa.png)
 ![screenshot of working app](https://github.com/eSTee3/Leash/blob/main/public/project3_working.png)
 ![Screenshot 2023-04-16 182900](https://user-images.githubusercontent.com/115947835/232357320-f2c726d9-5138-4051-b31b-a740d38fb3d5.png)
+
+## User Story
+[Back to Top](#table-of-contents)
+
+# Local Installation
+
+1. Download or clone this repo to your local machine
+2. Launch a terminal from the root of the same folder
+3. Enter `npm install` to install all required packages and wait for them to complete
+4. Enter `npm run build` to create and automatically launch the website on your local machine
+
+[Back to Top](#table-of-contents)
 
 ## User Story
 
@@ -63,85 +94,66 @@ WHEN I click on a Bark and see all the comments tied to that Bark
 ┗►THEN I can create my own comment to that Bark
 ```
 
-## Installation
+[Back to Top](#table-of-contents)
 
-Libraries used:  
--React
--GraphQL
--Node.js
--Express.js
--MongoDB
--Mongoose
--Heroku
+## Coding Requirements
 
-Copy repo code and open Visual studio Code to run. Follow steps below to set up server.
+- [x] Use React for the front end.
+- [x] Use GraphQL with a Node.js and Express.js server.
+- [x] Use MongoDB and the Mongoose ODM for the database.
+- [x] Use queries and mutations for retrieving, adding, updating, and deleting data.
+- [ ] Be deployed using Heroku (with data).
+- [x] Have a polished UI.
+- [x] Be responsive.
+- [x] Be interactive (i.e., accept and respond to user input).
+- [x] Include authentication (JWT).
+- [x] Protect sensitive API key information on the server.
+- [x] Have a clean repository that meets quality coding standards (file structure, naming conventions, best practices for class and id naming conventions, indentation, high-quality comments, and so on).
+- [x] Have a high-quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
-### Server setup steps when seeding database with a JavaScript file:
+## Optional Requirements
 
-1. Set login information in .env file
-<pre>
-DB_NAME='your_mysql_database_name'
-DB_USER='your_mysql_username'
-DB_PASSWORD='your_mysql_password' 
-</pre>
+- [ ] Uses a web manifest.
+- [ ] Uses a service worker for offline functionality.
+- [ ] Is installable.
 
-2. Login into mysql
-<pre>
-mysql -u root -p
-</pre>
+[Back to Top](#table-of-contents)
 
-3. Source the schema
-<pre>
-source db/schema.sql;
-</pre>
+---
 
-4. Exit out of mysql terminal
-<pre>
-quit
-</pre>
+# License
 
-5. Install node packages
-<pre>
-npm i
-</pre>
+MIT License
 
-6. Seed the database
-<pre>
-node ./seeds/index.js
-</pre>
+Copyright (c)
 
-7. Start Server
-<pre>
-npm start
-</pre>
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-## Usage
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Link to application can be found [Here]()
-Login craditionals that can be used:
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-<pre>
-Email: admin@test.com
-Password: 123456
-</pre>
+[Back to Top](#table-of-contents)
 
-Or can create your own username and signup by providing a username, email, and password.
+---
 
-## Contributing
+## How to Contribute
 
-Submit bug and feature requests.
-<br>
-Furture work:
+[Contributor Covenant](https://www.contributor-covenant.org/)
 
-1. React and comment to the barks.
-
-## Tests
-
-No tests
-
-## License
-
-Please see https://mit-license.org/ to get detailed information for this license
+[Back to Top](#table-of-contents)
 
 ## Questions
 
@@ -152,3 +164,4 @@ You can find [Mark](https://github.com/eSTee3) on Github
 You can find [Mela](https://github.com/mela2294) on Github
 <br>
 You can find [Por](https://github.com/por-chang) on Github
+
