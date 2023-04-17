@@ -32,6 +32,7 @@ Overall, the web application is useful for people who want another social media 
 
 Screenshot of working application:
 
+![Screenshot 2023-04-16 183217](https://user-images.githubusercontent.com/115947835/232357587-84f28922-7172-450c-8c60-7f076ecb3caa.png)
 ![screenshot of working app](https://github.com/eSTee3/Leash/blob/main/public/project3_working.png)
 ![Screenshot 2023-04-16 182900](https://user-images.githubusercontent.com/115947835/232357320-f2c726d9-5138-4051-b31b-a740d38fb3d5.png)
 
