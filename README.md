@@ -38,7 +38,9 @@
 
 ---
 
-# [Link to Live Application](https://team01-leash.herokuapp.com/)
+# [Link to Live Application](https://team01-leash.herokuapp.com/)  
+Email: admin@test.com  
+Password: 123456  
 
 [Back to Top](#table-of-contents)
 
