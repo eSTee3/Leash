@@ -2,7 +2,7 @@
 
 ### Table of Contents
 
-- [Technologies Used](#technologies-used)
+- [Code Base Info](#tcode-base-info)
   - [Coding Badges](#coding-badges)
 - [Link to Application](#link-to-live-application)
 - [Description](#description)
@@ -17,9 +17,9 @@
 
 ---
 
-## ![License Badge](https://shields.io/badge/license-MIT-yellow)
+# ![License Badge](https://shields.io/badge/license-MIT-yellow)
 
-# Technologies Used
+# Code Base Info
 
 ![GitHub top language](https://img.shields.io/github/languages/top/eSTee3/leash?color=green&logo=github&logoColor=green)
 ![GitHub language count](https://img.shields.io/github/languages/count/eSTee3/leash?color=green&logo=github&logoColor=green)
